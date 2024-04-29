@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes con diferentes contenedores</title>
+    <style>
+        body {
+            background-color: rgb(247, 215, 238);
+        }
+
+        .container {
+            display: inline-table;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .MaiSan {
+            width: 400px;
+            height: 220px;
+            opacity: 0.7;
+        }
+
+        .Hayasaka {
+            width: 250px;
+            height: 250px;
+            opacity: 0.5;
+        }
+
+        .Hayasaka:hover {
+            opacity: 1.0;
+        }
+
+        .Chizuru {
+            width: 250px;
+            height: 250px;
+        }
+
+        .Chizuru:hover {
+            opacity: 0.5;
+        }
+
+        .container-group {
+            margin-bottom: 20px;
+        }
+
+        .Caja1 {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            color: white;
+            width: 400px;
+            height: 100px;
+            display: inline-table;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        .Caja2 {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+            width: 400px;
+            height: 100px;
+            display: inline-table;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        .Caja3 {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            color: white;
+            width: 400px;
+            height: 100px;
+            display: inline-table;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        div.background {
+            background: url(img/_.jpeg) repeat;
+            border: 4px solid rgb(0, 0, 0);
+        }
+
+        div.transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.3;
+        }
+
+        div.transbox p {
+            margin: 2%;
+            font-weight: bold;
+            color: #000000;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="MaiSan" src="img/bunny.jpg" alt="Imagen 1">
+    </div>
+
+    <div class="container">
+        <img class="Hayasaka" src="img/_.jpeg" alt="Imagen 2">
+    </div>
+
+    <div class="container">
+        <img class="Chizuru" src="img/ᜊ  ֙ 𝖢𝗁𝗂𝗓𝗎𝗋𝗎 𝖬𝗂𝗓𝗎𝗁𝖺𝗋𝖺 — 👠.jpeg" alt="Imagen 3">
+    </div>
+
+    <div class="container-group">
+        <div class="Caja1">
+            <h3>Contenido de la caja transparente 1</h3>
+            <p>Este es un ejemplo de contenido dentro de la caja transparente 1.</p>
+        </div>
+
+        <div class="Caja2">
+            <h3>Contenido de la caja transparente 2</h3>
+            <p>Este es un ejemplo de contenido dentro de la caja transparente 2.</p>
+        </div>
+
+        <div class="Caja3">
+            <h3>Contenido de la caja transparente 3</h3>
+            <p>Este es un ejemplo de contenido dentro de la caja transparente 3.</p>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="transbox">
+            <p>Pagina De Jhems.</p>
+        </div>
+    </div>
+
+    <div id="final-div">
+        <div>
+            <p>Explicación de Algunas Propiedades CSS:</p>
+            <p>- `background-color`: Establece el color de fondo de un elemento.</p>
+            <p>- `display`: Define el tipo de visualización del elemento.</p>
+            <p>- `opacity`: Define la opacidad del elemento.</p>
+            <p>- `margin`: Establece los márgenes externos de un elemento.</p>
+            <p>- `padding`: Establece el espacio entre el contenido y el borde interior de un elemento.</p>
+            <p>- `color`: Define el color del texto.</p>
+            <p>- `rgba()`: Define un color usando valores de rojo, verde y azul, con un cuarto parámetro para la transparencia.</p>
+            <p>- `:hover`: Define estilos que se aplicarán cuando el cursor del mouse esté sobre el elemento.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

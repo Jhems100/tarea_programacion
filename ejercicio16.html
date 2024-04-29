@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los Ejemplos de Alineación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .centrar-elementos {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .centrar-texto {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .centrar-imagen {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .alinear-posicion {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .alinear-posicion .izquierda {
+            position: absolute;
+            left: 0;
+        }
+
+        .alinear-posicion .derecha {
+            position: absolute;
+            right: 0;
+        }
+
+        .alinear-float {
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .alinear-float .izquierda {
+            float: left;
+        }
+
+        .alinear-float .derecha {
+            float: right;
+        }
+
+        .centrar-vertical {
+            display: inline-block;
+            padding: 50px 0;
+            margin-bottom: 20px;
+        }
+
+        .centrar-linea-altura {
+            line-height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .centrar-posicion-transformacion {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-bottom: 20px;
+        }
+
+        .centrar-flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .contenedor {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .contenedor:nth-child(1) {
+            background-color: #ffcccc;
+        }
+
+        .contenedor:nth-child(2) {
+            background-color: #ccffcc;
+        }
+
+        .contenedor:nth-child(3) {
+            background-color: #ccccff;
+        }
+
+        .contenedor:nth-child(4) {
+            background-color: #ffff00;
+        }
+
+        .contenedor:nth-child(5) {
+            background-color: #ffccff;
+        }
+
+        .contenedor:nth-child(6) {
+            background-color: #ccffff;
+        }
+
+        .contenedor:nth-child(7) {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="centrar-elementos">
+            <div>Elemento 1</div>
+            <div>Elemento 2</div>
+            <div>Elemento 3</div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="centrar-texto">
+            <p>Este texto está centrado.</p>
+            <p>Otro texto centrado.</p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="centrar-imagen">
+            <img src="img/bunny.jpg" alt="Imagen centrada" style="width: 370px; height: 350px;">
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="alinear-posicion">
+            <br>
+            <div class="izquierda">Izquierda</div></br>
+            <div class="derecha">Derecha</div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="alinear-float clearfix">
+            <div class="izquierda">Alineado a la izquierda</div>
+            <div class="derecha">Alineado a la derecha</div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="centrar-vertical">
+            <p>Este texto está centrado verticalmente usando padding.</p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="centrar-linea-altura">
+            <p>Este texto está centrado verticalmente usando line-height.</p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="centrar-posicion-transformacion">
+            <p>Este texto está centrado verticalmente usando posición y transformación.</p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="centrar-flexbox">
+            <p>Este texto está centrado verticalmente usando Flexbox.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

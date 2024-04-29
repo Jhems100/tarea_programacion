@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de CSS Icons con Bootstrap</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .explanation {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .alipay-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px; /* Ajusta el margen para separar el icono del texto */
+            fill: currentColor; /* Utiliza el color actual del texto */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Agregando icono de Alipay con SVG -->
+        <h2>Uso de CSS Icons con Bootstrap</h2>
+        <p>Puedes integrar el icono de Alipay en tu página Bootstrap</p>
+        <!-- Añadir icono de Alipay -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="alipay-icon" viewBox="0 0 16 16">
+            <path d="M2.541 0H13.5a2.55 2.55 0 0 1 2.54 2.563v8.297c-.006 0-.531-.046-2.978-.813-.412-.14-.916-.327-1.479-.536q-.456-.17-.957-.353a13 13 0 0 0 1.325-3.373H8.822V4.649h3.831v-.634h-3.83V2.121H7.26c-.274 0-.274.273-.274.273v1.621H3.11v.634h3.875v1.136h-3.2v.634H9.99c-.227.789-.532 1.53-.894 2.202-2.013-.67-4.161-1.212-5.51-.878-.864.214-1.42.597-1.746.998-1.499 1.84-.424 4.633 2.741 4.633 1.872 0 3.675-1.053 5.072-2.787 2.08 1.008 6.37 2.738 6.387 2.745v.105A2.55 2.55 0 0 1 13.5 16H2.541A2.55 2.55 0 0 1 0 13.437V2.563A2.55 2.55 0 0 1 2.541 0"/>
+            <path d="M2.309 9.27c-1.22 1.073-.49 3.034 1.978 3.034 1.434 0 2.868-.925 3.994-2.406-1.602-.789-2.959-1.353-4.425-1.207-.397.04-1.14.217-1.547.58Z"/>
+        </svg>
+        <!-- Texto que acompaña al icono -->
+        <span>Icono de Alipay</span>
+
+        <!-- Div explicativo -->
+        <div class="explanation">
+            <h3>Explicación del uso del icono de Alipay con Bootstrap:</h3>
+            <p>Utilizando SVG, puedes integrar el icono de Alipay directamente en tu página HTML.</p>
+            <p>Simplemente copia el código SVG proporcionado y pégalo en tu documento HTML donde desees que aparezca el icono.</p>
+            <p>El código SVG incluye información sobre el tamaño, el color y la forma del icono, lo que te permite personalizar su apariencia según sea necesario.</p>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript de Bootstrap -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>

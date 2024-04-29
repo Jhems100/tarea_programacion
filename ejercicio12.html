@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Posicionamiento CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+
+        .static-content {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            position: static;
+            top: 50px;
+            left: 50px;
+        }
+
+        .relative-content {
+            width: 200px;
+            height: 200px;
+            background-color: #2ecc71;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .fixed-content {
+            width: 200px;
+            height: 200px;
+            background-color: #e74c3c;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .absolute-content {
+            width: 200px;
+            height: 200px;
+            background-color: #f39c12;
+            position: absolute;
+            top: 150px;
+            right: 50px;
+        }
+
+        .sticky-content {
+            width: 200px;
+            height: 200px;
+            background-color: #9b59b6;
+            position: sticky;
+            top: 50px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="static-content">Contenido Estático</div>
+        <div class="relative-content">Contenido Relativo</div>
+        <div class="fixed-content">Contenido Fijo</div>
+        <div class="absolute-content">Contenido Absoluto</div>
+        <div class="sticky-content">Contenido Pegajoso</div>
+    </div>
+
+    <!-- Div de explicaciones -->
+    <div class="explanation">
+        <h2>Explicación de Posicionamiento CSS</h2>
+        <ul>
+            <li><strong>Posicionamiento estático:</strong> Se mantiene en su posición original en el flujo del
+                documento.</li>
+            <li><strong>Posicionamiento relativo:</strong> Se desplaza desde su posición original en el flujo del
+                documento.</li>
+            <li><strong>Posicionamiento fijo:</strong> Se mantiene fijo en relación con la ventana del navegador.</li>
+            <li><strong>Posicionamiento absoluto:</strong> Se posiciona en relación con su primer ancestro posicionado.
+            </li>
+            <li><strong>Posicionamiento pegajoso:</strong> Se comporta como relativo hasta que alcanza un punto de
+                desplazamiento, luego se pega.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

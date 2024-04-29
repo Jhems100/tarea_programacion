@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .animation {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-image: url(img/𝐫𝐞𝐢𝐧𝐚.jpeg);
+            background-size: cover;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .text-container {
+            background-color: #333333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #FFD700;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        @keyframes example {
+            0% {
+                background-image: url(img/_.jpeg);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-image: url(img/bunny.jpg);
+                left: calc(100% - 100px); /* Mueve el elemento a la derecha */
+                top: 0px;
+            }
+
+            50% {
+                background-image: url(img/ᜊ\ \ ֙\ 𝖢𝗁𝗂𝗓𝗎𝗋𝗎\ 𝖬𝗂𝗓𝗎𝗁𝖺𝗋𝖺\ —\ 👠.jpeg);
+                left: calc(100% - 100px); /* Mantiene la posición a la derecha */
+                top: calc(100% - 100px);
+            }
+
+            75% {
+                background-image: url(img/᪥ᚋ\ 𝑚𝑎𝑟𝑖𝑛\ 𝑘𝑖𝑡𝑎𝑔𝑎𝑤𝑎࿚.jpeg);
+                left: 0px; /* Vuelve a la posición inicial a la izquierda */
+                top: calc(100% - 100px);
+            }
+
+            100% {
+                background-image: url(img/✎‗₊˚↷\ utaha\ _\ hazl_x.jpeg);
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="animation"></div>
+
+        <div class="text-container">
+            <h2>Explicación del uso de los comandos en la animación:</h2>
+            <h3>Explicación de las propiedades de animación CSS:</h3>
+            <p><strong>@keyframes:</strong> Este comando define una secuencia de pasos que describen cómo se animará el elemento
+                a lo largo del tiempo. En este caso, se llama "example".</p>
+            <p><strong>0%, 25%, 50%, 75%, 100%:</strong> Estos son los puntos clave de la animación, indicando el progreso de la
+                animación a lo largo del tiempo, desde el inicio (0%) hasta la finalización (100%).</p>
+            <p><strong>background-image:</strong> Este comando especifica la imagen de fondo que se utilizará en cada paso de la
+                animación. Se proporciona la URL de la imagen correspondiente a cada punto clave de la animación.</p>
+            <p><strong>left y top:</strong> Estos comandos establecen las coordenadas de posición del elemento en cada paso de la
+                animación. Cambiando estas propiedades, el elemento se mueve a lo largo de la animación.</p>
+            <p><strong>animation-name:</strong> Este comando especifica el nombre de la animación definida por @keyframes que se
+                aplicará al elemento. En este caso, es "example".</p>
+            <p><strong>animation-duration:</strong> Establece la duración total de la animación en segundos. En este caso, la animación
+                completa durará 4 segundos.</p>
+            <p><strong>animation-timing-function:</strong> Define la velocidad de la animación en cada paso. En este caso, se utiliza
+                "ease-in-out" para una aceleración suave al comienzo y al final de cada iteración de la animación.</p>
+            <p><strong>animation-iteration-count:</strong> Establece el número de veces que la animación se repetirá. "Infinite" indica
+                que la animación se repetirá continuamente.</p>
+            <p><strong>animation-direction:</strong> Define la dirección de la animación en cada iteración. "Alternate" indica que la
+                animación se reproducirá hacia adelante y hacia atrás en cada iteración.</p>
+            <p><strong>animation-delay:</strong> Indica el tiempo de espera antes de que la animación comience. En este caso, la animación
+                comenzará 2 segundos después de cargar la página.</p>
+            <p><strong>animation-fill-mode:</strong> Define cómo se aplicarán los estilos al elemento antes y después de que se ejecute
+                la animación. "Both" indica que los estilos se aplicarán tanto antes como después de la animación.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

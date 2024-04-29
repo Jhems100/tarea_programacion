@@ -1,0 +1,152 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de Border Styles con Imágenes</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box {
+                margin: 10px;
+                width: 200px;
+                height: 200px;
+                border-radius: 20px;
+                border: 5px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .box-with-title {
+                text-align: center;
+            }
+
+            .dotted-border {
+                border-style: dotted;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .dashed-border {
+                border-style: dashed;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .solid-border {
+                border-style: solid;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .double-border {
+                border-style: double;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .groove-border {
+                border-style: groove;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .ridge-border {
+                border-style: ridge;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .inset-border {
+                border-style: inset;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .outset-border {
+                border-style: outset;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .none-border {
+                border-style: none;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .hidden-border {
+                border-style: hidden;
+                background-image: url(img/bunny.jpg);
+            }
+
+            .explanation {
+                margin-top: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="box dotted-border">
+                <div class="box-with-title">Dotted Border</div>
+            </div>
+            <div class="box dashed-border">
+                <div class="box-with-title">Dashed Border</div>
+            </div>
+            <div class="box solid-border">
+                <div class="box-with-title">Solid Border</div>
+            </div>
+            <div class="box double-border">
+                <div class="box-with-title">Double Border</div>
+            </div>
+            <div class="box groove-border">
+                <div class="box-with-title">Groove Border</div>
+            </div>
+            <div class="box ridge-border">
+                <div class="box-with-title">Ridge Border</div>
+            </div>
+            <div class="box inset-border">
+                <div class="box-with-title">Inset Border</div>
+            </div>
+            <div class="box outset-border">
+                <div class="box-with-title">Outset Border</div>
+            </div>
+            <div class="box none-border">
+                <div class="box-with-title">None Border</div>
+            </div>
+            <div class="box hidden-border">
+                <div class="box-with-title">Hidden Border</div>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <div><strong>border-radius:</strong> Esta propiedad establece el radio de los bordes
+                de un elemento, controlando la curvatura de las esquinas.</div><br> 
+            <div><strong>border:</strong> La propiedad border establece el ancho, estilo y color
+                de los bordes de un elemento en un solo atajo.</div><br>
+            <div><strong>dotted:</strong> Esta propiedad establece un borde punteado para un elemento.</div><br>
+            <div><strong>dashed:</strong> Esta propiedad establece un borde discontinuo para un elemento.</div><br>
+            <div><strong>solid:</strong> Esta propiedad establece un borde sólido para un elemento.</div><br>
+            <div><strong>double:</strong> Esta propiedad establece un borde doble para un elemento,
+                que consiste en dos líneas paralelas separadas por un espacio.</div><br>
+            <div><strong>groove:</strong> Esta propiedad establece un borde en relieve para un elemento.</div><br>
+            <div><strong>ridge:</strong> Esta propiedad establece un borde en relieve inverso
+                para un elemento.</div><br>
+            <div><strong>inset:</strong> Esta propiedad establece un borde con sombra interior para
+                un elemento.</div><br>
+            <div><strong>outset:</strong> Esta propiedad establece un borde con sombra exterior para
+                un elemento.</div><br>
+            <div><strong>none:</strong> Esta propiedad elimina completamente el borde de un elemento.</div><br>
+            <div><strong>hidden:</strong> Esta propiedad oculta el borde de un elemento, manteniendo
+                el espacio que ocuparía el borde si estuviera presente.</div><br>
+        </div>
+
+    </body>
+
+    </html>

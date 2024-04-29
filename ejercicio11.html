@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla HTML</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px auto;
+        border: 3px double white;
+    }
+    th, td {
+        border: 2px solid white; 
+        padding: 8px;
+        text-align: left;
+    }
+    caption {
+        color: white;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tabla HTML con explicación de atributos</h1>
+    <p>En esta tabla se muestran los atributos size, alignment y borders:</p>
+
+    <table>
+        <caption>Tabla de ejemplo</caption>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Explicación de los atributos:</h2>
+    <ul>
+        <li><strong>Size:</strong> Define el tamaño de la tabla. En este caso, la tabla ocupa el 50% del ancho del contenedor.</li>
+        <li><strong>Alignment:</strong> Establece la alineación del texto dentro de las celdas. En este caso, el texto está alineado a la izquierda.</li>
+        <li><strong>Borders:</strong> Controla los bordes de la tabla y las celdas. La tabla tiene un borde doble blanco, y las celdas tienen un borde sólido blanco.</li>
+    </ul>
+</div>
+
+</body>
+</html>

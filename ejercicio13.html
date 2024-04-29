@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de overflow CSS</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow-x: visible;
+            /* El contenido desborda el contenedor */
+            overflow-y: hidden;
+            /* El contenido desborda el contenedor */
+        }
+
+        .container2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow-x: hidden;
+            /* El contenido desborda el contenedor */
+            overflow-y: scroll;
+            /* Se muestra una barra de desplazamiento vertical */
+        }
+
+        .container3 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow-x: scroll;
+            /* Se muestra una barra de desplazamiento horizontal */
+            overflow-y: auto;
+            /* Se muestra una barra de desplazamiento vertical si es necesario */
+        }
+
+        .explanation {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Contenido visible con desbordamiento oculto.</p>
+    </div>
+    <div class="explanation">
+        <p><strong>Uso de <code>visible</code> y <code>hidden</code>:</strong> En el primer contenedor, el contenido que
+            desborda el contenedor es visible, pero el desbordamiento vertical está oculto.</p>
+    </div>
+
+    <div class="container2">
+        <p>Contenido oculto con desbordamiento visible.</p>
+    </div>
+    <div class="explanation">
+        <p><strong>Uso de <code>hidden</code> y <code>scroll</code>:</strong> En el segundo contenedor, el contenido que
+            desborda el contenedor está oculto y se muestra una barra de desplazamiento vertical para acceder a él.</p>
+    </div>
+
+    <div class="container3">
+        <p>Contenido con desbordamiento visible tanto horizontal como vertical.</p>
+    </div>
+    <div class="explanation">
+        <p><strong>Uso de <code>scroll</code> y <code>auto</code>:</strong> En el tercer contenedor, se muestra una
+            barra de desplazamiento horizontal si es necesario, y una barra de desplazamiento vertical si el contenido
+            desborda el contenedor verticalmente.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces con Pseudo-selectores</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .explanation-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p><a href="https://www.pinterest.es/pin/211598882485254797/">Mai san personaje de anime</a></p>
+
+        <div class="explanation-box">
+            <h2>Uso de Pseudo-selectores en enlaces</h2>
+            <p><strong>a:link:</strong> Define el estilo de los enlaces no visitados.</p>
+            <p><strong>a:visited:</strong> Define el estilo de los enlaces ya visitados.</p>
+            <p><strong>a:hover:</strong> Define el estilo de los enlaces al pasar el cursor sobre ellos.</p>
+            <p><strong>a:active:</strong> Define el estilo de los enlaces al ser clicados.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

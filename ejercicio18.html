@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Rounded Corners</title>
+<style>
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    .figure-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .figure {
+        border: 2px solid white;
+        padding: 10px;
+    }
+
+    .figure h2 {
+        margin-top: 0;
+    }
+
+    .figure p {
+        margin-bottom: 0;
+    }
+
+    #figura1 {
+        border-radius: 25px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura2 {
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura3 {
+        border-radius: 25px;
+        background: url(img/ᜊ\ \ ֙\ 𝖢𝗁𝗂𝗓𝗎𝗋𝗎\ 𝖬𝗂𝗓𝗎𝗁𝖺𝗋𝖺\ —\ 👠.jpeg);
+        background-size: contain;
+        background-position: left top;
+        background-repeat: repeat;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura4 {
+        border-radius: 15px 50px 30px 5px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura5 {
+        border-radius: 15px 50px 30px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura6 {
+        border-radius: 15px 50px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura7 {
+        border-radius: 15px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura8 {
+        border-radius: 50px / 15px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura9 {
+        border-radius: 15px / 50px;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #figura10 {
+        border-radius: 50%;
+        background: #73AD21;
+        width: 200px;
+        height: 150px;
+    }
+
+    #explicaciones {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="figure-container">
+    <div class="figure" id="figura1">
+        <h2>Figura 1</h2>
+        <p>Esquinas redondeadas con fondo sólido.</p>
+    </div>
+
+    <div class="figure" id="figura2">
+        <h2>Figura 2</h2>
+        <p>Esquinas redondeadas con borde sólido.</p>
+    </div>
+
+    <div class="figure" id="figura3">
+        <h2>Figura 3</h2>
+        <p>Esquinas redondeadas con imagen de fondo repetida.</p>
+    </div>
+
+    <div class="figure" id="figura4">
+        <h2>Figura 4</h2>
+        <p>Esquinas redondeadas con diferentes radios en cada esquina.</p>
+    </div>
+
+    <div class="figure" id="figura5">
+        <h2>Figura 5</h2>
+        <p>Esquinas redondeadas con diferentes radios en tres esquinas.</p>
+    </div>
+
+    <div class="figure" id="figura6">
+        <h2>Figura 6</h2>
+        <p>Esquinas redondeadas con diferentes radios en dos esquinas.</p>
+    </div>
+
+    <div class="figure" id="figura7">
+        <h2>Figura 7</h2>
+        <p>Esquinas redondeadas con un solo radio para todas las esquinas.</p>
+    </div>
+
+    <div class="figure" id="figura8">
+        <h2>Figura 8</h2>
+        <p>Esquinas redondeadas elípticas con diferentes radios en cada eje.</p>
+    </div>
+
+    <div class="figure" id="figura9">
+        <h2>Figura 9</h2>
+        <p>Esquinas redondeadas elípticas con diferentes radios en cada eje.</p>
+    </div>
+
+    <div class="figure" id="figura10">
+        <h2>Figura 10</h2>
+        <p>Esquinas redondeadas completamente circulares.</p>
+    </div>
+</div>
+
+</body>
+</html>

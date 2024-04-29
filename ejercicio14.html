@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de float CSS</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .left {
+            float: left;
+            /* Flotar a la izquierda */
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-right: 10px;
+        }
+
+        .right {
+            float: right;
+            /* Flotar a la derecha */
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-left: 10px;
+        }
+
+        .none {
+            float: none;
+            /* No flotar */
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            clear: both;
+            /* Limpiar flotadores */
+        }
+
+        .inherit {
+            float: inherit;
+            /* Heredar el valor de flotamiento */
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="none"></div>
+            <div class="inherit"></div>
+
+            <div class="explanation">
+                <p><strong>Uso de <code>left</code>:</strong> El primer div flota a la izquierda, permitiendo que otros
+                    elementos floten a su derecha.</p>
+                <p><strong>Uso de <code>right</code>:</strong> El segundo div flota a la derecha, permitiendo que otros
+                    elementos floten a su izquierda.</p>
+                <p><strong>Uso de <code>none</code>:</strong> El tercer div no flota, lo que significa que permanece en
+                    su posición original en el flujo del documento.</p>
+                <p><strong>Uso de <code>inherit</code>:</strong> El cuarto div hereda el valor de flotamiento de su
+                    elemento contenedor, si lo tiene. En este caso, si el contenedor flota, este div también flotará en
+                    la misma dirección.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

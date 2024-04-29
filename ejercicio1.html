@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso del RGB y HEX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .color-box {
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .color-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .Red {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .Green {
+            background-color: rgb(0, 128, 0);
+        }
+
+        .HexBlue {
+            background-color: #0000ff;
+        }
+
+        .HexYellow {
+            background-color: #ffff47;
+        }
+
+        .explanation {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .explanation p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-box Red">
+        <p>
+            RGB = Red 255, 0, 0
+        </p>
+    </div>
+    <div class="color-box Green">
+        <p>
+            RGB = Green 0, 128, 0
+        </p>
+    </div>
+    <div class="color-box HexBlue">
+        <p>
+            HEX = Blue: #0000ff
+        </p>
+    </div>
+    <div class="color-box HexYellow">
+        <p>
+            HEX = Yellow: #FFFF47
+        </p>
+    </div>
+    <div class="explanation">
+        <p>
+            RGB: este uso de colores para el fondo de la página web, utiliza la mezcla de los colores (RED, GREEN Y BLUE) en una escala de 0 - 255 cada uno. Ejemplo: (255, 0, 0) es una mezcla de (RED, GREEN, BLUE) y representa el color rojo
+        </p>
+        <p>
+            HEX: este uso de colores para el fondo de la página web, utiliza el sistema hexadecimal que es una representación de color que utiliza una combinación de seis caracteres alfanuméricos que van desde 0 a 9 y A a F. Ejemplo: (#0000ff) es el código que representa el color azul
+        </p>
+    </div>
+</body>
+
+</html>
+
